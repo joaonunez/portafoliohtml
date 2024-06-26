@@ -1,0 +1,62 @@
+#educacion {
+    width: auto;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea el contenido al centro */
+    text-align: center;
+    background-color: #35355e;
+    box-shadow: 2px 0 5px rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 15px;
+
+}
+
+#educacion h2 {
+    text-align: center;
+}
+
+.contenedor-educacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea si es necesario */
+    gap: 20px; /* Espacio entre los elementos */
+    
+}
+
+.educ {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea los elementos dentro del contenedor al centro */
+    text-align: center;
+    margin: 10px; /* Espacio alrededor de cada tarjeta de educación */
+}
+
+.imagen-educacion {
+    width: 200px;
+    height: 80px;
+    margin: 0 auto 10px; /* Centra la imagen y añade un margen inferior */
+}
+
+@media (max-width: 768px) {
+    .contenedor-educacion {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+        align-items: center; /* Alinea el contenido al centro */
+        justify-content: center;
+    }
+    
+    #educacion {
+        margin-top: 50px;
+        box-shadow: 2px 0 5px rgb(0, 0, 0);
+        border-radius: 5px;
+        padding: 15px;
+    }
+
+    .educ {
+        width: 80%; /* Ajusta el ancho de las tarjetas de educación en pantallas pequeñas */
+        margin-bottom: 20px; /* Añade un margen inferior entre las tarjetas */
+    }
+}
